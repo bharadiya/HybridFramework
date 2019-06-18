@@ -1,8 +1,6 @@
 package com.inetbanking.testCases;
 
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inetbanking.pageobjects.LoginPage;

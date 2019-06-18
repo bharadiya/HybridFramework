@@ -29,8 +29,8 @@ public class Reporting extends TestListenerAdapter {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
 		
-		htmlReporter=new ExtentHtmlReporter("/home/sb/eclipse-workspace/INetBanking_V1/test-output/"+repName);//specify location of the report
-		htmlReporter.loadXMLConfig("/home/sb/eclipse-workspace/INetBanking_V1/extent-config.xml");
+		htmlReporter=new ExtentHtmlReporter("/home/sb/eclipse-workspace/HybridFramework/test-output/"+repName);//specify location of the report
+		htmlReporter.loadXMLConfig("/home/sb/eclipse-workspace/HybridFramework/extent-config.xml");
 		
 		extent=new ExtentReports();
 		

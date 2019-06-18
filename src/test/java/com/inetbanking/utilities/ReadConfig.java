@@ -11,7 +11,7 @@ public class ReadConfig {
 	public ReadConfig() {
 		FileInputStream file;
 		try {
-			file = new FileInputStream("/home/sb/eclipse-workspace/INetBanking_V1/Configuration/config.properties");
+			file = new FileInputStream("/home/sb/eclipse-workspace/HybridFramework/Configuration/config.properties");
 			pro = new Properties();
 			pro.load(file);
 		} catch (FileNotFoundException e) {

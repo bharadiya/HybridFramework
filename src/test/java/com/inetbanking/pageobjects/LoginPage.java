@@ -12,7 +12,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}	
+	}
 
 	@FindBy(how = How.NAME, using = "password")
 	WebElement txtPassword;
@@ -22,6 +22,9 @@ public class LoginPage {
 
 	@FindBy(how = How.NAME, using = "btnLogin")
 	WebElement btnLogin;
+
+	@FindBy(how = How.LINK_TEXT, using = "Log out")
+	WebElement logoutbtn;
 
 	public void setUserName(String uname) {
 		txtUserName.sendKeys(uname);
@@ -33,6 +36,10 @@ public class LoginPage {
 
 	public void clickSubmit() {
 		btnLogin.click();
+	}
+
+	public void loggingOut() {
+		logoutbtn.click();
 	}
 
 }
