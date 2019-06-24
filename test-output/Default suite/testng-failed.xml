@@ -8,6 +8,7 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="loginDDF"/>
+          <include name="AddUser"/>
         </methods>
       </class> <!-- com.inetbanking.testCases.TC_LoginTest_002 -->
     </classes>

@@ -1,5 +1,6 @@
 package com.inetbanking.testCases;
 
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,9 @@ public class TC_LoginTest_001 extends BaseClass {
 		lp.setPassword(password);
 		lp.clickSubmit();
 		if (driver.getTitle().equals("Guru99 Bank Manager HomePage")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }
